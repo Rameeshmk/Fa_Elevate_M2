@@ -12063,6 +12063,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+.mainpg{
+  width:100%;
+  background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%,url(/image/new-mainpage.webp);
+  background-position: center;
+  background-size: cover;
+  height: 109vh;
+}
+nav a:hover{
+  color: orange;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
