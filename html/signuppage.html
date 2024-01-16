@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> TechGram | Signup </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="signuppg.css">
+
+   </head>
+<body>
+  
+  <div class="container">
+    <div class="title">Registration</div> 
+    <div class="content">
+      <form action="success.html">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" id="fullname" onkeyup="validateName()" placeholder="Enter your name" required>
+            <p id="fullname-error"></p>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" id="username" onkeyup="validateUser()" placeholder="Enter your username" required>
+            <p id="username-error"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="email" onkeyup="validateEmail()"  placeholder="Enter your email" required>
+            <p id="email-error"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" id="phonenumber" onkeyup="validateNum()" placeholder="Enter your number" required>
+            <p id="num-error"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" id="password" onkeyup="validatePassword()" placeholder="Enter your password" required>
+            <p id="password-error"></p>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" id="Confirmpswrd" onkeyup="validateConfirmpw()" placeholder="Confirm your password" required>
+            <p id="confirm-error"></p>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit"id="submit" onclick="return   validateForm()" value="Register">
+          <p id="submit-error"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>
